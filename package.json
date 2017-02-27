@@ -1,0 +1,19 @@
+{
+  "name": "dreses",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "claudia create --configure-alexa-skill --region us-east-1 --api-module bot --cache-api-config apiConfig",
+    "logs": "aws logs filter-log-events --log-group-name /aws/lambda/claudia-test",
+    "update": "claudia update --cache-api-config apiConfig"
+  },
+  "author": "",
+  "license": "Apache2",
+  "dependencies": {
+    "claudia-bot-builder": "^2.13.2",
+    "huh": "^2.0.1",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  }
+}
