@@ -2,7 +2,7 @@
 
 Chat bot to learn about local services and data.
 
-![sonar logo](./sonar.png)
+![sonar logo](./images/sonar_108.png)
 
 Powered by connecting to open data geoservices. Currently supports:
 
