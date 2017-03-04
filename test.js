@@ -33,6 +33,11 @@ getData("bus stops", address).then(function(text) {
   console.log(text)
 })
 
+const layerMap = require('./lib/layer_map')
+layerMap("crime", address).then(function(text) {
+  console.log(text)
+})
+
 const parseIntent = require('./lib/parse_intent')
 inputs = parseIntent({"text": "map of " + address}, {"body": ""});
 console.log(inputs)
