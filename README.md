@@ -34,6 +34,7 @@ GetPopulation population {Location}
 GetPopulation people in {Location}
 GetCrime safety of {Location}
 GetData what is the {Dataset} of {Location}
+GetData what is the nearest {Dataset} at {Location}
 GetData tell me about {Dataset} at {Location}
 GetData ask about {Dataset} at {Location}
 GetData when is {Dataset} for {Location}
@@ -41,7 +42,7 @@ SummarizeData how many {Dataset} at {Location} since {TimePeriod}
 SummarizeData in past {TimePeriod} how many {Dataset} at {Location}
 AddNote add note {Note} at {Location}
 GetMap map of {Location}
-GetMap show map of {Location}
+GetMap see {Dataset} at {Location}
 ExitApp stop
 
 ## Develop
@@ -60,7 +61,7 @@ ExitApp stop
 
 1. Add `ping/pong`
 1. Add `poll`
-1. Add `checkin`
+1. Add `notes`
 1. Add 'HAL Joke'
   - "It can only be attributable to human error."
   Dave Bowman: Hello, HAL. Do you read me, HAL?

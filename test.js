@@ -32,16 +32,22 @@ const getPopulation = require('./lib/get_population')
 log('getPopulation',getPopulation(address, {"arcgisToken": token}));
 
 const getData = require('./lib/get_data')
-log('getData',getData("trash", address));
-log('getData',getData("anc", address));
-log('getData',getData("crime", address));
-log('getData',getData("bus stops", address));
+log('getData',getData("trash", address, env));
+log('getData',getData("anc", address, env));
+log('getData',getData("crime", address, env));
+log('getData',getData("bus stops", address, env));
 
 const layerMap = require('./lib/layer_map')
 log('layerMap',layerMap("crime", address));
 
 const parseIntent = require('./lib/parse_intent')
 inputs = parseIntent({"text": "map of " + address}, {"body": ""});
+console.log(inputs)
+
+inputs = parseIntent({"text": "hal error"}, {"body": ""});
+console.log(inputs)
+
+inputs = parseIntent({"text": "open the pod bay doors"}, {"body": ""});
 console.log(inputs)
 
 
@@ -67,7 +73,7 @@ var serviceInputs = {'username':'aturner', 'name': 'SonarTest', 'token': token}
 //         "Name": "Bob",
 //         "Category": 1,
 //         "Location": "Here",
-//         "Comments": "Checking in..."
+//         "Comments": "notesg in..."
 //       },
 //       "geometry": geometry
 //     }]
@@ -75,5 +81,5 @@ var serviceInputs = {'username':'aturner', 'name': 'SonarTest', 'token': token}
 //   log('create', geoservice().modifyFeatures(featuresInput));
 // })
 
-// const checkin = require('./lib/checkin')
-// log("checkin", checkin("Test",address,env))
+const notes = require('./lib/notes')
+log("note", notes("Test",address,env))
