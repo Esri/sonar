@@ -23,10 +23,10 @@ Powered by connecting to open data geoservices. Currently supports:
 
 ### Amazon Echo
 
-Help help {dataset}
-Hello Hello, Sonar.
-Hal Open the pod bay doors, HAL.
-Ping ping {dataset}
+Help help {Dataset}
+Hello Hello Sonar.
+Hal Open the pod bay doors HAL.
+Ping ping {Dataset}
 GetPopulation give me the population of {Location}
 GetPopulation how many people live nearby {Location}
 GetPopulation what is the population of {Location}
@@ -39,7 +39,7 @@ GetData ask about {Dataset} at {Location}
 GetData when is {Dataset} for {Location}
 SummarizeData how many {Dataset} at {Location} since {TimePeriod}
 SummarizeData in past {TimePeriod} how many {Dataset} at {Location}
-AddNote note at {Location} {Note}
+AddNote add note {Note} at {Location}
 GetMap map of {Location}
 GetMap show map of {Location}
 ExitApp stop

@@ -1,5 +1,5 @@
 {
-  "name": "dreses",
+  "name": "sonar",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -12,8 +12,7 @@
   "license": "Apache2",
   "dependencies": {
     "claudia-bot-builder": "^2.13.2",
-    "huh": "^2.0.1",
-    "request": "^2.79.0",
+    "request": "^2.80.0",
     "request-promise": "^4.1.1"
   }
 }

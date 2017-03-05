@@ -47,12 +47,12 @@ console.log(inputs)
 
 var server = 'http://services.arcgis.com/bkrWlSKcjUDFDtgw/arcgis/rest/services/SonarComments/FeatureServer';
 const geoservice = require('./lib/geoservice')
-// log('query', geoservice.metadata(server));
+// log('query', geoservice().metadata(server));
 var serviceInputs = {'username':'aturner', 'name': 'SonarTest', 'token': token}
-// log('create', geoservice.create(serviceInputs));
+// log('create', geoservice().create(serviceInputs));
 
 // serviceInputs.serviceUrl = 'http://services.arcgis.com/bkrWlSKcjUDFDtgw/arcgis/rest/services/SonarTest/FeatureServer';
-// log('create', geoservice.createLayer(serviceInputs));
+// log('create', geoservice().createLayer(serviceInputs));
 //
 // var featuresInput = serviceInputs
 // featuresInput.serviceUrl = server;
@@ -72,7 +72,7 @@ var serviceInputs = {'username':'aturner', 'name': 'SonarTest', 'token': token}
 //       "geometry": geometry
 //     }]
 //   }
-//   log('create', geoservice.modifyFeatures(featuresInput));
+//   log('create', geoservice().modifyFeatures(featuresInput));
 // })
 
 // const checkin = require('./lib/checkin')
