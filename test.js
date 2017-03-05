@@ -9,9 +9,45 @@ function log(name, method) {
   })
 }
 
+const help = require('./lib/help')
+log("help", help())
+log("help with text", help("data"))
+
+
+const hal = require('./lib/hal')
+log("hal", hal.sorry())
+
+
+const ping = require('./lib/ping')
+log("ping", ping())
+log("ping", ping("with a response"))
+
+const getCrime = require('./lib/get_crime')
+log('getCrime', getCrime(address))
+
+const getMap = require('./lib/get_map')
+log('getMap',getMap(address));
+
+const getPopulation = require('./lib/get_population')
+log('getPopulation',getPopulation(address, {"arcgisToken": token}));
+
+const getData = require('./lib/get_data')
+log('getData',getData("trash", address));
+log('getData',getData("anc", address));
+log('getData',getData("crime", address));
+log('getData',getData("bus stops", address));
+
+const layerMap = require('./lib/layer_map')
+log('layerMap',layerMap("crime", address));
+
+const parseIntent = require('./lib/parse_intent')
+inputs = parseIntent({"text": "map of " + address}, {"body": ""});
+console.log(inputs)
+
+
 var server = 'http://services.arcgis.com/bkrWlSKcjUDFDtgw/arcgis/rest/services/SonarComments/FeatureServer';
 const geoservice = require('./lib/geoservice')
-log('query', geoservice.metadata(server));
+// log('query', geoservice.metadata(server));
 var serviceInputs = {'username':'aturner', 'name': 'SonarTest', 'token': token}
 // log('create', geoservice.create(serviceInputs));
 
@@ -41,33 +77,3 @@ var serviceInputs = {'username':'aturner', 'name': 'SonarTest', 'token': token}
 
 // const checkin = require('./lib/checkin')
 // log("checkin", checkin("Test",address,env))
-
-const hal = require('./lib/hal')
-log("hal", hal.sorry())
-
-//
-// const ping = require('./lib/ping')
-// log("ping", ping())
-// log("ping", ping("with a response"))
-//
-// const getCrime = require('./lib/get_crime')
-// log('getCrime', getCrime(address))
-//
-// const getMap = require('./lib/get_map')
-// log('getMap',getMap(address));
-//
-// const getPopulation = require('./lib/get_population')
-// log('getPopulation',getPopulation(address, {"arcgisToken": token}));
-//
-// const getData = require('./lib/get_data')
-// log('getData',getData("trash", address));
-// log('getData',getData("anc", address));
-// log('getData',getData("crime", address));
-// log('getData',getData("bus stops", address));
-//
-// const layerMap = require('./lib/layer_map')
-// log('layerMap',layerMap("crime", address));
-//
-// const parseIntent = require('./lib/parse_intent')
-// inputs = parseIntent({"text": "map of " + address}, {"body": ""});
-// console.log(inputs)

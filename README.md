@@ -23,6 +23,11 @@ Powered by connecting to open data geoservices. Currently supports:
 
 ### Amazon Echo
 
+- Help help
+- Help help {dataset}
+- Hello Hello, Sonar.
+- Hal Open the pod bay doors, HAL.
+- Ping ping {dataset}
 - GetPopulation give me the population of {Location}
 - GetPopulation how many people live nearby {Location}
 - GetPopulation what is the population of {Location}
@@ -30,6 +35,8 @@ Powered by connecting to open data geoservices. Currently supports:
 - GetPopulation people in {Location}
 - GetCrime safety of {Location}
 - GetData what is the {Dataset} of {Location}
+- GetData tell me about {Dataset} at {Location}
+- GetData ask about {Dataset} at {Location}
 - GetData when is {Dataset} for {Location}
 - SummarizeData how many {Dataset} at {Location} since {TimePeriod}
 - SummarizeData in past {TimePeriod} how many {Dataset} at {Location}
