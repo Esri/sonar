@@ -64,6 +64,23 @@ This project is a prototype concept that is still evolving. It currently support
 
 ## Develop
 
+Sonar is built with [ClaudiaJS](https://claudiajs.com/) and hosted on Amazon Web Services.
+
+To start developing, you will need to use an Amazon developer account.
+
+### ArcGIS Token
+
+To use the geoenrichment services for population, you will need to add an ArcGIS Token to the [Amazon API Gateway Stage Variables](http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-set-stage-variables-aws-console.html)
+
+1. Visit Amazon API Gateway
+1. Within your API, click on "Stages"
+1. Click on "latest"
+1. Click on tab "Stage Variables"
+1. Click on "Add Stage Variable"
+1. In Name text input, enter `arcgisToken` and in Value text input enter your token
+1. Click on the gray checkmark to the far right side
+
+
 ### Update Amazon Lambda functions
 
 `claudia create --region us-east-1 --api-module bot`
