@@ -1,10 +1,12 @@
 # Sonar
 
-Chat bot to learn about local services and data.
-
 ![sonar logo](./images/sonar_108.png)
 
-Powered by connecting to open data geoservices. Currently supports:
+Information should be easily accessible and ubiquitous. Often data requires complex user experiences through limited devices. Instead, what if data can be conversational through commonly used communications tools like Facebook Messenger and Amazon Alexa voice recognition.
+
+Sonar bot provides a natural language interface to local government open data and demographic services that helps people ask questions of their community.
+
+This project is a prototype concept that is still evolving. It currently supports:
 
 - Facebook messenger
 - Slack
@@ -12,9 +14,19 @@ Powered by connecting to open data geoservices. Currently supports:
 
 ## Interface
 
+### Example Commands
+
+- /sonar map of 201 4th St NE, Washington, DC
+- /sonar tell me about trash at 201 4th St NE, Washington, DC
+- @sonar what are the bus stops at stanton park, Washington, DC
+- Speak: safety of 201 4th St NE, Washington, DC
+- Speak: Add note dangerous intersection at 2nd & constitution, Washington, DC
+- /sonar see notes at 201 4th St NE, Washington, DC
+
 ### Slack
 
-- `/sonar what is Crime for 101 Main St, Denver, CO`
+- `/sonar map of 708 10th St NE, Washington, DC`
+- `/sonar tell me about trash at 708 10th St NE, Washington, DC`
 
 ### Facebook
 
@@ -23,27 +35,27 @@ Powered by connecting to open data geoservices. Currently supports:
 
 ### Amazon Echo
 
-Help help {Dataset}
-Hello Hello Sonar.
-Hal Open the pod bay doors HAL.
-Ping ping {Dataset}
-GetPopulation give me the population of {Location}
-GetPopulation how many people live nearby {Location}
-GetPopulation what is the population of {Location}
-GetPopulation population {Location}
-GetPopulation people in {Location}
-GetCrime safety of {Location}
-GetData what is the {Dataset} of {Location}
-GetData what is the nearest {Dataset} at {Location}
-GetData tell me about {Dataset} at {Location}
-GetData ask about {Dataset} at {Location}
-GetData when is {Dataset} for {Location}
-SummarizeData how many {Dataset} at {Location} since {TimePeriod}
-SummarizeData in past {TimePeriod} how many {Dataset} at {Location}
-AddNote add note {Note} at {Location}
-GetMap map of {Location}
-GetMap see {Dataset} at {Location}
-ExitApp stop
+- Help help {Dataset}
+- Hello Hello Sonar.
+- Hal Open the pod bay doors HAL.
+- Ping ping {Dataset}
+- GetPopulation give me the population of {Location}
+- GetPopulation how many people live nearby {Location}
+- GetPopulation what is the population of {Location}
+- GetPopulation population {Location}
+- GetPopulation people in {Location}
+- GetCrime safety of {Location}
+- GetData what is the {Dataset} of {Location}
+- GetData what is the nearest {Dataset} at {Location}
+- GetData tell me about {Dataset} at {Location}
+- GetData ask about {Dataset} at {Location}
+- GetData when is {Dataset} for {Location}
+- SummarizeData how many {Dataset} at {Location} since {TimePeriod}
+- SummarizeData in past {TimePeriod} how many {Dataset} at {Location}
+- AddNote add note {Note} at {Location}
+- GetMap map of {Location}
+- GetMap see {Dataset} at {Location}
+- ExitApp stop
 
 ## Develop
 
@@ -57,26 +69,23 @@ ExitApp stop
 
 `aws logs filter-log-events --log-group-name /aws/lambda/claudia-test`
 
-## TODO
+### Licensing
 
-1. Add `ping/pong`
-1. Add `poll`
-1. Add `notes`
-1. Add 'HAL Joke'
-  - "It can only be attributable to human error."
-  Dave Bowman: Hello, HAL. Do you read me, HAL?
-  HAL: Affirmative, Dave. I read you.
-  Dave Bowman: Open the pod bay doors, HAL.
-  HAL: I'm sorry, Dave. I'm afraid I can't do that.
-  Dave Bowman: What's the problem?
-  HAL: I think you know what the problem is just as well as I do.
-  Dave Bowman: What are you talking about, HAL?
-  HAL: This mission is too important for me to allow you to jeopardize it.
-  Dave Bowman: I don't know what you're talking about, HAL.
-  HAL: I know that you and Frank were planning to disconnect me, and I'm afraid that's something I cannot allow to happen.
-  Dave Bowman: [feigning ignorance] Where the hell did you get that idea, HAL?
-  HAL: Dave, although you took very thorough precautions in the pod against my hearing you, I could see your lips move.
-  Dave Bowman: Alright, HAL. I'll go in through the emergency airlock.
-  HAL: Without your space helmet, Dave? You're going to find that rather difficult.
-  Dave Bowman: HAL, I won't argue with you anymore! Open the doors!
-  HAL: Dave, this conversation can serve no purpose anymore. Goodbye.
+Copyright Esri
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+> http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+A copy of the license is available in the repository's [LICENSE](./LICENSE) file.
+
+[](Esri Tags: Bots)
+[](Esri Language: JavaScript)
