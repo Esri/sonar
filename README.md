@@ -12,6 +12,11 @@ This project is a prototype concept that is still evolving. It currently support
 - Slack
 - Alexa Echo Skills
 
+### Demo videos
+
+- [DevSummit 2017 Plenary demo](https://youtu.be/H_cdn2kVB-E?t=4m35s)
+- [Demo Theater including architecture](https://youtu.be/1J5y8sJ9aKI)
+
 ## Interface
 
 ### Example Commands
