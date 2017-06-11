@@ -32,10 +32,10 @@ const getPopulation = require('./lib/get_population')
 log('getPopulation',getPopulation(address, {"arcgisToken": token}));
 
 const getData = require('./lib/get_data')
-log('getData',getData("trash", address, env));
-log('getData',getData("anc", address, env));
-log('getData',getData("crime", address, env));
-log('getData',getData("bus stops", address, env));
+log('getData trash',getData("trash", address, env));
+log('getData anc',getData("anc", address, env));
+log('getData crime',getData("crime", address, env));
+log('getData bus stops',getData("bus stops", address, env));
 
 const layerMap = require('./lib/layer_map')
 log('layerMap',layerMap("crime", address));
