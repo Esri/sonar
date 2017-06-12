@@ -106,7 +106,6 @@ _or_ `claudia update`
 
 ### Get Logs
 
-
 Requires [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html).
 
 `npm run logs`
