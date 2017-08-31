@@ -68,6 +68,20 @@ Sonar is built with [ClaudiaJS](https://claudiajs.com/) and hosted on Amazon Web
 
 To start developing, you will need to use an Amazon developer account.
 
+### Quick Start
+
+First run trhough the [Installing and Configuring Claudia.js](https://claudiajs.com/tutorials/installing.html) documentation, specifically the parts about installing Claudia globally (`npm install claudia -g`) and [Configuring Access Credentials](https://claudiajs.com/tutorials/installing.html#configuring-access-credentials). Then:
+
+1. Clone this repo
+1. `npm install`
+1. Update your preferred AWS region in `package.json` and `claudia.json`
+1. Create (first time): `npm run create`
+1. Creating will deploy the appropriate API endpoints and lambda functions, but you must also then [configure](https://claudiajs.com/tutorials/hello-world-chatbot.html#connecting-with-facebook-messenger) the platforms you want. For example, 
+    1. For Alexa: `claudia update --configure-alexa-skill`
+    1. For Slack: `claudia update --configure-slack-slash-command`
+    1. [etc](https://claudiajs.com/tutorials/hello-world-chatbot.html#connecting-with-facebook-messenger)
+1. Updates: `npm run update` - will re-deploy your code to AWS.
+
 ### ArcGIS Token
 
 To use the geoenrichment services for population, you will need to add an ArcGIS Token to the [Amazon API Gateway Stage Variables](http://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-set-stage-variables-aws-console.html)
@@ -81,15 +95,11 @@ To use the geoenrichment services for population, you will need to add an ArcGIS
 1. Click on the gray checkmark to the far right side
 
 
-### Update Amazon Lambda functions
-
-`claudia create --region us-east-1 --api-module bot`
-
-`claudia update`
-
 ### Get Logs
 
-`aws logs filter-log-events --log-group-name /aws/lambda/claudia-test`
+Requires [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html).
+
+`npm run logs`
 
 ### Licensing
 
@@ -108,6 +118,3 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 A copy of the license is available in the repository's [LICENSE](./LICENSE) file.
-
-[](Esri Tags: Bots)
-[](Esri Language: JavaScript)
