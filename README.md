@@ -1,8 +1,6 @@
 # Sonar
 
-![sonar logo](./images/sonar_108.png)
-
-Information should be easily accessible and ubiquitous. Often data requires complex user experiences through limited devices. Instead, what if data can be conversational through commonly used communications tools like Facebook Messenger and Amazon Alexa voice recognition.
+<img align="right" src="./images/sonar_108.png" alt="sonar logo">Information should be easily accessible and ubiquitous. Often data requires complex user experiences through limited devices. Instead, what if data can be conversational through commonly used communications tools like Facebook Messenger and Amazon Alexa voice recognition.
 
 Sonar bot provides a natural language interface to local government open data and demographic services that helps people ask questions of their community.
 
