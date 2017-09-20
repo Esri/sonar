@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "create": "claudia create --configure-alexa-skill --region us-east-1 --api-module bot --cache-api-config apiConfig",
+    "create": "claudia create --region us-east-1 --api-module index --cache-api-config apiConfig",
     "logs": "aws logs filter-log-events --log-group-name /aws/lambda/claudia-test",
     "update": "claudia update --cache-api-config apiConfig"
   },
