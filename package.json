@@ -11,6 +11,7 @@
   "author": "",
   "license": "Apache2",
   "dependencies": {
+    "aws-sdk": "^2.202.0",
     "claudia-bot-builder": "^2.13.2",
     "request": "^2.80.0",
     "request-promise": "^4.1.1"

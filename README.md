@@ -93,11 +93,24 @@ To use the geoenrichment services for population, you will need to add an ArcGIS
 1. Click on the gray checkmark to the far right side
 
 
+
+### Update Amazon Lambda functions
+
+`npm run create`
+
+_or_ `claudia create --region us-east-1 --api-module bot`
+
+`npm run update`
+
+_or_ `claudia update`
+
 ### Get Logs
 
 Requires [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html).
 
 `npm run logs`
+
+_or_ `aws logs filter-log-events --log-group-name /aws/lambda/claudia-test`
 
 ### Licensing
 
