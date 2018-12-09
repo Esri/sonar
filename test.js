@@ -1,5 +1,5 @@
 var address = "101 4th St NE, Washington, DC";
-var token = process.env.ARCGIS_TOKEN;
+var token = process.env.arcgisToken;
 var geolocation = require('./lib/geolocation')
 var env = {"arcgisToken": token}
 
@@ -166,4 +166,3 @@ log('getData trash NYC',getData("trash", nyc_address, env));
 //
 // const notes = require('./lib/notes')
 // log("note", notes("Test",address,env))
-
