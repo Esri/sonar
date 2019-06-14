@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "sonar-api-executor",
+    "name": "sonar-api",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "7ig3yzhc61",
+    "module": "index"
+  }
+}

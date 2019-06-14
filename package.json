@@ -1,0 +1,20 @@
+{
+  "name": "sonar-api",
+  "version": "0.0.1",
+  "description": "Sonar using claudia api builder",
+  "main": "index.js",
+  "scripts": {
+    "create": "claudia create --region us-east-1 --api-module index --cache-api-config apiConfig",
+    "logs": "aws logs filter-log-events --log-group-name /aws/lambda/sonar-api",
+    "update": "claudia update --cache-api-config apiConfig"
+  },
+  "author": "",
+  "license": "Apache2",
+  "dependencies": {
+    "aws-sdk": "^2.202.0",
+    "claudia-api-builder": "^4.1.1",
+    "claudia-bot-builder": "^4",
+    "request": "^2.80.0",
+    "request-promise": "^4.1.1"
+  }
+}
